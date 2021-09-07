@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+body{
+    background-color: black;
 }
 .MainFondo{
     width: 100%;
@@ -15,23 +19,28 @@
 
 h1 {
     padding-top: 1.5%;
-    font-family: 'Kaisei HarunoUmi', serif;
     font-weight: bold 700;
     text-transform: uppercase;
     color: white;
+    /* display: none; */
 }
-
-
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+h1 a:hover{
+    color: #41382f;
+}
 /*Navegador, Listas,*/
 .navegador {
-    background: rgba(0, 0, 0, 0.939);
+    background: rgba(0, 0, 0, 0.72);
     /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     position: fixed;
     text-align: center;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
 }
 
@@ -42,11 +51,106 @@ h1 {
     list-style: none;
     padding-top: 2%;
     justify-content: center;
-    font-family: 'Kaisei HarunoUmi', serif;
     font-weight: 400;
 }
 
 .Lista li {
-    margin-right: 20%;
+    /* margin-right: 10%; */
     color: white;
+    padding-right: 6.5%;
+    padding-left: 6.5%;
+    text-align: center;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: #41382f;
+}
+
+/*  Sección 1  */
+.Seccion1{
+    display: flex;
+    /* flex-direction: column; */
+    /* display: flex; */
+    /* justify-content:lef; */
+}
+.caja1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.Nosotros{
+    padding-top: 10%;
+}
+.caja1 p{
+    padding: 6%;
+}
+.biciSeccion1{
+    width: 40%;
+    /* display: inline-block; */
+}
+.BtnNosotros{
+    width: 20%;
+    /* display: inline; */
+    margin: auto;
+    padding: 1%;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
+
+}
+.BtnNosotros a{
+    color: black;
+    text-decoration: none;
+}
+.BtnNosotros:hover{
+    background-color: #41382f;
+    color: white;
+}
+.BtnNosotros a:hover{
+color: white;
+}
+.BtnContacto{
+    width: 20%;
+    margin: auto;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 20px;
+    border:none;
+}
+.BtnContacto:hover{
+    background-color: #41382f;
+    color: white;
+}
+.BtnContacto a:hover{
+    color: white;
+    margin: 1%;
+}
+.BtnContacto a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Sección 2*/
+
+.Seccion2{
+    color: white;
+    text-align: center;
+}
+
+.Seccion2 h2{
+    padding-top: 5%;
+}
+
+.Seccion2 p{
+    padding: 5%;
+}
+.Seccion2 .Bici2{
+    width: 50%;
+    margin-bottom: 5%;
+    /* min-height: 40%; */
+    filter: saturate(10%);
 }
