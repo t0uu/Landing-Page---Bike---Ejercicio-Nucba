@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.MainFondo{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: auto ;
+}
+.Imagen {
+    width: 6%;
+    /* padding-right: 0%; */
+}
+
+h1 {
+    padding-top: 1.5%;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-weight: bold 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/*Navegador, Listas,*/
+.navegador {
+    background: rgba(0, 0, 0, 0.939);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.Lista {
+    display: flex;
+    list-style: none;
+    padding-top: 2%;
+    justify-content: center;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-weight: 400;
+}
+
+.Lista li {
+    margin-right: 20%;
+    color: white;
+}
