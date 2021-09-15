@@ -6,6 +6,8 @@
 body{
     background-color: black;
 }
+/*Animaciones*/
+
 .MainFondo{
     width: 100%;
     height: 100%;
@@ -14,15 +16,13 @@ body{
 }
 .Imagen {
     width: 6%;
-    /* padding-right: 0%; */
-}
 
+}
 h1 {
     padding-top: 1.5%;
     font-weight: bold 700;
     text-transform: uppercase;
     color: white;
-    /* display: none; */
 }
 h1 a{
     text-decoration: none;
@@ -34,18 +34,14 @@ h1 a:hover{
 /*Navegador, Listas,*/
 .navegador {
     background: rgba(0, 0, 0, 0.72);
-    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     position: fixed;
     text-align: center;
+    z-index: 2;
     width: 100%;
-    /* display: flex; */
     justify-content: space-evenly;
 }
-
-
-
 .Lista {
     display: flex;
     list-style: none;
@@ -55,7 +51,6 @@ h1 a:hover{
 }
 
 .Lista li {
-    /* margin-right: 10%; */
     color: white;
     padding-right: 6.5%;
     padding-left: 6.5%;
@@ -68,13 +63,22 @@ li a{
 li a:hover{
     color: #41382f;
 }
+/*Menu Hamburguesa*/
+#menu{
+    display: none;
+}
+.btnMenu{
+    display: none;
+}
+
+#menu:checked ~ .Lista{
+    display: none;
+}
+
 
 /*  Sección 1  */
 .Seccion1{
     display: flex;
-    /* flex-direction: column; */
-    /* display: flex; */
-    /* justify-content:lef; */
 }
 .caja1{
     display: flex;
@@ -90,11 +94,9 @@ li a:hover{
 }
 .biciSeccion1{
     width: 40%;
-    /* display: inline-block; */
 }
 .BtnNosotros{
     width: 20%;
-    /* display: inline; */
     margin: auto;
     padding: 1%;
     border-radius: 20px;
@@ -151,6 +153,174 @@ color: white;
 .Seccion2 .Bici2{
     width: 50%;
     margin-bottom: 5%;
-    /* min-height: 40%; */
     filter: saturate(10%);
+}
+
+/*Seccion 3*/
+.Seccion3{
+    color:white;
+    text-align:center;
+}
+#Bike{
+    padding-bottom: 1%;
+}
+
+.Seccion3 div{
+    display: flex;
+}
+
+.Seccion3 div img{
+    width: 30%;
+    margin: auto;
+    padding-bottom: 1%;
+    filter: sepia(90%) grayscale(100%);
+}
+.Seccion3 div img:hover{
+    filter: sepia(0%) grayscale(0%);
+
+}
+/*Seccion 4*/
+
+.Seccion4{
+    color:white;
+}
+
+.Seccion4 form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    border: 1px solid;
+    width: 60%;
+    padding: 3%;
+    border-radius: 6px;
+}
+form p{
+    padding: 1em;
+}
+form input{
+    display: flex;
+    margin: auto;
+    margin-bottom: 4%;
+    width: 30%;
+    border-radius: 12px;
+    text-align: center;
+}
+form .btnEnviar{
+    margin: auto;
+}
+.btnEnviar{
+    margin-top: 10%;
+    width: 30%;
+    padding: 0.7%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.btnEnviar:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid;
+}
+
+
+/*Footer*/
+footer p{
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+    font-size: 0.6em;
+}
+
+footer p a{
+    color: brown;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 1024px) {
+    .BtnNosotros{
+        width: 20%;
+        padding: 1%;
+        font-size: 13px;
+    }
+    .BtnContacto{
+        width: 20%;
+        padding: 1%;
+        font-size: 13px;
+    }  
+}
+
+@media (max-width: 768px) {
+    /*Header*/
+    #menu{
+        display: none;
+    }
+    .btnMenu{
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .Lista{
+        display: none;
+    }
+    #menu:checked ~ .Lista{
+        display: flex;
+    }
+    /*Seccion1 - botones*/
+    .BtnNosotros{
+        width: 40%;
+        padding: 2.5%;
+        font-size: 13px;
+    }
+    .BtnContacto{
+        width: 40%;
+        padding: 2.5%;
+        font-size: 13px;
+    }  
+    /*Seccion1 texto*/
+    .caja1 p{
+        font-size: 0.7em;
+        padding: 2%;
+    }
+    /*Seccion2*/
+    .Seccion2 p{
+        font-size: 0.7em;
+        padding: 2%;
+    }
+    /*Seccion3*/
+    .Seccion3 div{
+        display: flex;
+        flex-direction: column;
+    }
+    .Seccion3 div img{
+        width: 50%;
+        padding: 2%;
+
+    }
+    /*Formulario*/
+    .Seccion4 form{
+        width: 80%;
+    }
+    form input{
+        width: 50%;
+    }
+}
+@media (max-width:375px ) {
+    .Lista li a{
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 320px) {
+    .Seccion1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .biciSeccion1{
+        width: 60%;
+        margin: auto;
+    }
 }

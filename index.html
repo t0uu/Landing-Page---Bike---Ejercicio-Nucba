@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/Bike-Depository.png" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
     <title>SIMPLE</title>
 </head>
 
@@ -18,31 +20,64 @@
         <nav class="navegador">
             <!-- <img class="Imagen" src="/assets/Bike-Depository.png" alt="Logo-Bike"> -->
             <h1><a href="index.html">SIMPLE</a></h1>
+            <input type="checkbox" name="menu" id="menu">
+            <label for="menu" class="btnMenu"><i class="fas fa-bicycle"></i></label>
             <ul class="Lista">
                 <li><a href="">Inicio</a></li>
                 <li><a href="#Nosotros">Nosotros</a></li>
                 <li><a href="">Bike's</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#Contactanos">Contacto</a></li>
             </ul>
         </nav>
         <img class="MainFondo" src="/assets/Bike.jpg" alt="">
     </main>
     <section class="Seccion1">
         <div class="caja1">
-        <h2 class="Nosotros" id="Nosotros">Sobre Nosotros</h2>
-            <p>Somos una Empresa dedicada a la producción y creación de Bicicletas desde uso domestico hasta para la competición,nos caracterizamos por mantener un estilo elegante y simple pero que esta pensando para durar muchos años.</p>
+            <h2 class="Nosotros" id="Nosotros">Sobre Nosotros</h2>
+            <p>Somos una Empresa dedicada a la producción y creación de Bicicletas desde uso domestico hasta para la
+                competición,nos caracterizamos por mantener un estilo elegante y simple pero que esta pensando para
+                durar muchos años.</p>
             <div class="Botones">
-                <button class="BtnNosotros"><a href="#MasSobreNosotros"> Más sobre Nosotros</a></button>
+                <button class="BtnNosotros"><a href="#MasSobreNosotros">Nosotros</a></button>
                 <button class="BtnContacto"><a href=""> Contactanos</a></button>
             </div>
         </div>
-        <img src="/assets/undraw_Ride_a_bicycle_2yok.svg" alt="bike" class="biciSeccion1">
+        <img src="/assets/undraw_Ride_a_bicycle_2yok.svg" alt="bike" class="biciSeccion1 animate__animated animate__backInRight">
     </section>
     <section class="Seccion2">
         <h2 id="MasSobreNosotros">¿Cuál es Nuestro Objetivo?</h2>
-            <p>Nos trazamos como misión crear la bici de tus sueños, cumpliendo cada detalle en su bicicleta personalizada. Siguiendo una ruta de planeamiento adecuada en la cual logramos que todo sea excelente desde el primer momento de la creación de la misma,animate y acompañanos en este viaje!</p>
-            <img src="/assets/Bike2.jpg" alt="Seccion2" class="Bici2">
+        <p>Nos trazamos como misión crear la bici de tus sueños, cumpliendo cada detalle en su bicicleta personalizada.
+            Siguiendo una ruta de planeamiento adecuada en la cual logramos que todo sea excelente desde el primer
+            momento de la creación de la misma,animate y acompañanos en este viaje!</p>
+        <img src="/assets/Bike2.jpg" alt="Seccion2" class="Bici2">
     </section>
+    <section class="Seccion3">
+        <h2 id="Bike">Nuestros diseños</h2>
+        <div>
+            <img src="/assets/bike01.jpg" alt="bike01">
+            <img src="/assets/bike02.jpg" alt="bike02">
+            <img src="/assets/bike03.jpg" alt="bike03">
+        </div>
+    </section>
+    <section class="Seccion4">
+        <form action="">
+            <h2 id="Contactanos">Formulario de Contacto</h2>
+            <p>Tenes dudas, ¿Quéres saber más sobre nuestra forma de trabajar?.. Contactanos!!</p>
+            <label for="nombre">Nombre:
+                <input type="text" name="nombre" id="nombre">
+            </label>
+            <label for="apellido">Apellido:
+                <input type="text" name="apellido" id="apellido">
+            </label>
+            <label for="email">Email:
+                <input type="email" name="email" id="email">
+            </label>
+                <button type="submit" class="btnEnviar">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Creado por <a href="https://github.com/t0uu" target="_blank">Santiago Touzet</a> para Nucba</p>
+    </footer>
 </body>
 
 </html>
