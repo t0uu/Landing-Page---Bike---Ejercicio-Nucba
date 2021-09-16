@@ -36,11 +36,14 @@ h1 a:hover{
     background: rgba(0, 0, 0, 0.72);
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
-    position: fixed;
+    position: sticky;
+    top:0;
+    left: 0;
     text-align: center;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+
 }
 .Lista {
     display: flex;
@@ -260,8 +263,7 @@ footer p a{
         display: none;
     }
     .btnMenu{
-        display: flex;
-        justify-content: center;
+        display: inline;
         color: white;
     }
     .Lista{
@@ -269,6 +271,13 @@ footer p a{
     }
     #menu:checked ~ .Lista{
         display: flex;
+    }
+    ul.Lista{
+        font-size: 12.2px;
+        
+    }
+    .Lista li {
+        padding-left: 2%;
     }
     /*Seccion1 - botones*/
     .BtnNosotros{
