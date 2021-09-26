@@ -67,16 +67,12 @@ li a:hover{
     color: #41382f;
 }
 /*Menu Hamburguesa*/
-#menu{
-    display: none;
-}
-.btnMenu{
+.menu{
+    color: white;
     display: none;
 }
 
-#menu:checked ~ .Lista{
-    display: none;
-}
+
 
 
 /*  Sección 1  */
@@ -108,15 +104,16 @@ li a:hover{
 
 }
 .BtnNosotros a{
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .BtnNosotros:hover{
-    background-color: #41382f;
+    background-color: #f73100;
     color: white;
 }
 .BtnNosotros a:hover{
 color: white;
+
 }
 .BtnContacto{
     width: 20%;
@@ -127,7 +124,7 @@ color: white;
     border:none;
 }
 .BtnContacto:hover{
-    background-color: #41382f;
+    background-color: #f73100;
     color: white;
 }
 .BtnContacto a:hover{
@@ -135,7 +132,7 @@ color: white;
     margin: 1%;
 }
 .BtnContacto a{
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -144,6 +141,8 @@ color: white;
 .Seccion2{
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .Seccion2 h2{
@@ -158,15 +157,26 @@ color: white;
     margin-bottom: 5%;
     filter: saturate(10%);
 }
+.elegirnos{
+    display: flex;
+    text-align: center;
+    padding: 1%;
+
+}
+.elegirnos .ico{
+font-size: 20px;
+}
+.elegir{
+    font-size: 2em;
+    padding-bottom: 1em;
+}
 
 /*Seccion 3*/
 .Seccion3{
     color:white;
     text-align:center;
 }
-#Bike{
-    padding-bottom: 1%;
-}
+
 
 .Seccion3 div{
     display: flex;
@@ -223,7 +233,7 @@ form .btnEnviar{
 }
 
 .btnEnviar:hover{
-    background-color: black;
+    background-color: #f73100;
     color: white;
     border: 1px solid;
 }
@@ -234,11 +244,11 @@ footer p{
     padding-top: 3%;
     text-align: center;
     color: white;
-    font-size: 0.6em;
+    font-size: 1em;
 }
 
 footer p a{
-    color: brown;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -259,8 +269,11 @@ footer p a{
 
 @media (max-width: 768px) {
     /*Header*/
-    #menu{
-        display: none;
+    .menu{
+        display: block;
+    }
+    .navegador:hover .Lista{
+        display: flex;
     }
     .btnMenu{
         display: inline;
@@ -296,6 +309,13 @@ footer p a{
         padding: 2%;
     }
     /*Seccion2*/
+    .elegirnos{
+        display: inline;
+        /* flex-direction: row; */
+    }
+    .Seccion2 .elegir{
+        padding: 2rem;
+    }
     .Seccion2 p{
         font-size: 0.7em;
         padding: 2%;
@@ -321,6 +341,10 @@ footer p a{
 @media (max-width:375px ) {
     .Lista li a{
         font-size: 0.8em;
+    }
+    .elegir{
+        font-size: 1.6em;
+        padding: 1em;
     }
 }
 @media (max-width: 320px) {
